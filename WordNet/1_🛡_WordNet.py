@@ -1,8 +1,11 @@
 import streamlit as st
+import nltk
 from nltk.corpus import wordnet as wn
 import graphviz
 
 import _utils.utils as utils
+
+nltk.download('wordnet')
 
 NOUN_INFO = ['synset', 'hypernyms', 'hyponyms', 'holonyms', 'meronyms']
 VERB_INFO = ['synset', 'antonyms', 'hypernyms', 'troponyms', 'derivationally related', 'sentence frame', 'domain']
